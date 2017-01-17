@@ -1,22 +1,33 @@
+
 <template>
   <div id="app">
     <img src="./assets/logo.png">
     <hello></hello>
+    <foundation-accordion></foundation-accordion>
+
   </div>
 </template>
 
 <script>
 import Hello from './components/Hello'
+import FoundationAccordion from './components/Foundation-accordion'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    Hello,
+    FoundationAccordion
   }
 }
 </script>
 
+<style lang="sass">
+  @import "styles/theme.scss"
+  @import "styles/background.scss"
+</style>
+
 <style>
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
