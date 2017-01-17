@@ -12,6 +12,11 @@
 import Hello from './components/Hello'
 import FoundationAccordion from './components/Foundation-accordion'
 
+// foundation can be imported directly at the component level
+import 'foundation-sites';
+
+console.log(Foundation);
+
 export default {
   name: 'app',
   components: {
@@ -23,7 +28,7 @@ export default {
 
 <style lang="sass">
   @import "styles/theme.scss"
-  @import "styles/background.scss"
+  @import "styles/border"
 </style>
 
 <style>
