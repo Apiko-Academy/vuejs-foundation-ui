@@ -27,8 +27,8 @@ export default {
 </script>
 
 <style lang="sass">
-  @import "styles/theme.scss"
-  @import "styles/border"
+  @import "~styles/theme.scss"
+  @import "~styles/border"
 </style>
 
 <style>
