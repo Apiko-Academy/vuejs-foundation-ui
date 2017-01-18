@@ -18,7 +18,7 @@ npm run build
 ## Using Foundation-UI
 Foundation-UI styles are set using ```src/styles/themes.css``` file 
   
-You can use Foundation-UA JS as well. For example:
+You can use Foundation-UI JS as well. For example:
 
 ```js
 import 'foundation-sites';
