@@ -20,6 +20,7 @@
         </div>
       </li>
     </ul>
+    <a class="button">Learn More</a>
   </div>
 </template>
 

@@ -34,8 +34,10 @@ at each
 module where you want to use Foundation-UI JS. 
 
 ### Configuring Foundation-UI styles
-You can define what Foundation styles to include in src/styles/theme.scss 
+You can define what Foundation styles to include in ```src/styles/theme.scss``` 
 More on this: http://foundation.zurb.com/sites/docs/sass.html
+  
+##### You can also change Foundation style variables in ```src/styles/foundation-settings/settings.scss``` file
 
 ## Using Sass
 
