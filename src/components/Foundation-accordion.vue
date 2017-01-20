@@ -1,5 +1,15 @@
 <template>
   <div >
+
+  <a href="#" data-open="myModal">Click Me For A Modal</a>
+
+    <div id="myModal" class="reveal" data-reveal >
+      <h2 id="modalTitle">Awesome. I have it.</h2>
+      <p class="lead">Your couch.  It is mine.</p>
+      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+      <a class="close-button" data-close>&#215;</a>
+    </div>
+
     <ul class="accordion" data-accordion>
       <li class="accordion-item is-active" data-accordion-item>
         <a href="#" class="accordion-title">Accordion 1</a>
@@ -20,7 +30,6 @@
         </div>
       </li>
     </ul>
-    <a class="button">Learn More</a>
   </div>
 </template>
 
@@ -31,6 +40,6 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
-  }
+  },
 }
 </script>

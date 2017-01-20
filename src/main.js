@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import App from './App.vue';
-import 'foundation-sites';
+import 'script!what-input';
+import 'script!foundation-sites';
 
 export const app = new Vue({
   el: '#app',
@@ -8,8 +9,8 @@ export const app = new Vue({
     message: 'Hello'
   },
   ...App,
-  mounted: function()  {
-    new Foundation.Accordion($('.accordion'));
+  mounted ()  {
+    $(this.$el).foundation();
   }
 });
 

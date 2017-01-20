@@ -18,7 +18,9 @@ npm run build
 ## Using Foundation-UI
 Foundation-UI styles are set using ```src/styles/themes.css``` file 
   
-You can use Foundation-UI JS as well. For example:
+Foundation UI jQuery plugin is activated.  
+
+You can use Foundation JS object as well. For example:
 
 ```js
 import 'foundation-sites';
@@ -31,13 +33,31 @@ new Foundation.Accordion($('.accordion'));
 import foundation-sites
 ```
 at each
-module where you want to use Foundation-UI JS. 
+module where you want to use Foundation object. 
 
 ### Configuring Foundation-UI styles
 You can define what Foundation styles to include in ```src/styles/theme.scss``` 
 More on this: http://foundation.zurb.com/sites/docs/sass.html
   
 ##### You can also change Foundation style variables in ```src/styles/foundation-settings/settings.scss``` file
+
+## Adding New Content After Page Load
+If you add new content after the page has been loaded, you will need to reinitialize the Foundation JavaScript by running the following:
+```js $(document).foundation();```  
+  
+Reflow will make Foundation check the DOM for any elements and re-apply any listeners to them.
+```js $(document).foundation('reflow');```  
+  
+To be efficient, target the actual Foundation plugin you need to reflow:
+
+```js $(document).foundation('orbit', 'reflow');```  
+or  
+```js $(document).foundation('tab', 'reflow');```  
+or  
+```js $(document).foundation('interchange', 'reflow');```
+etc...  
+
+http://foundation.zurb.com/sites/docs/v/5.5.3/javascript.html
 
 ## Using Sass
 
